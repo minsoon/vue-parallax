@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/components/AppHeader.vue</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">all files</a> / <a href="index.html">src/components/</a> AppHeader.vue
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/10</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/2</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/2</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/10</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;template&gt;
+  &lt;div id="header"&gt;
+    &lt;v-navigation-drawer app fixed dark :mini-variant.sync="mini" v-model="drawer" class="grey darken-4"&gt;
+      &lt;v-list&gt;
+&nbsp;
+        &lt;v-list-group :value="routerSub === '/member'"&gt;
+          &lt;v-list-tile slot="activator"&gt;
+            &lt;v-list-tile-action&gt;&lt;v-icon&gt;folder_shared&lt;/v-icon&gt;&lt;/v-list-tile-action&gt;
+            &lt;v-list-tile-title&gt;회원관리&lt;/v-list-tile-title&gt;
+          &lt;/v-list-tile&gt;
+&nbsp;
+          &lt;v-list-tile :to="'/member/gd'"&gt;
+            &lt;v-list-tile-action&gt;&lt;v-icon&gt;people&lt;/v-icon&gt;&lt;/v-list-tile-action&gt;
+            &lt;v-list-tile-title&gt;GD회원정보관리&lt;/v-list-tile-title&gt;
+          &lt;/v-list-tile&gt;
+          &lt;v-list-tile&gt;
+            &lt;v-list-tile-action&gt;&lt;v-icon&gt;group_add&lt;/v-icon&gt;&lt;/v-list-tile-action&gt;
+            &lt;v-list-tile-title&gt;추천인관리&lt;/v-list-tile-title&gt;
+          &lt;/v-list-tile&gt;
+        &lt;/v-list-group&gt;
+&nbsp;
+        &lt;v-list-group :value="routerSub === '/statistics'"&gt;
+          &lt;v-list-tile slot="activator"&gt;
+            &lt;v-list-tile-action&gt;&lt;v-icon&gt;insert_chart&lt;/v-icon&gt;&lt;/v-list-tile-action&gt;
+            &lt;v-list-tile-title&gt;통계관리&lt;/v-list-tile-title&gt;
+          &lt;/v-list-tile&gt;
+&nbsp;
+          &lt;v-list-tile :to="'/statistics/member'"&gt;
+            &lt;v-list-tile-action&gt;&lt;v-icon&gt;contacts&lt;/v-icon&gt;&lt;/v-list-tile-action&gt;
+            &lt;v-list-tile-title&gt;회원통계&lt;/v-list-tile-title&gt;
+          &lt;/v-list-tile&gt;
+          &lt;v-list-tile :to="'/statistics/currentUse'"&gt;
+            &lt;v-list-tile-action&gt;&lt;v-icon&gt;bar_chart&lt;/v-icon&gt;&lt;/v-list-tile-action&gt;
+            &lt;v-list-tile-title&gt;사용현황&lt;/v-list-tile-title&gt;
+          &lt;/v-list-tile&gt;
+          &lt;v-list-tile :to="'/statistics/sales'"&gt;
+            &lt;v-list-tile-action&gt;&lt;v-icon&gt;trending_up&lt;/v-icon&gt;&lt;/v-list-tile-action&gt;
+            &lt;v-list-tile-title&gt;결제현황&lt;/v-list-tile-title&gt;
+          &lt;/v-list-tile&gt;
+        &lt;/v-list-group&gt;
+&nbsp;
+        &lt;v-list-group :value="routerSub === '/service'"&gt;
+          &lt;v-list-tile slot="activator"&gt;
+            &lt;v-list-tile-action&gt;&lt;v-icon&gt;computer&lt;/v-icon&gt;&lt;/v-list-tile-action&gt;
+            &lt;v-list-tile-title&gt;서비스 운영&lt;/v-list-tile-title&gt;
+          &lt;/v-list-tile&gt;
+&nbsp;
+          &lt;v-list-tile :to="''"&gt;
+            &lt;v-list-tile-action&gt;&lt;v-icon&gt;format_line_spacing&lt;/v-icon&gt;&lt;/v-list-tile-action&gt;
+            &lt;v-list-tile-title&gt;메인관리&lt;/v-list-tile-title&gt;
+          &lt;/v-list-tile&gt;
+          &lt;v-list-tile :to="''"&gt;
+            &lt;v-list-tile-action&gt;&lt;v-icon&gt;swap_vert&lt;/v-icon&gt;&lt;/v-list-tile-action&gt;
+            &lt;v-list-tile-title&gt;버전관리&lt;/v-list-tile-title&gt;
+          &lt;/v-list-tile&gt;
+          &lt;v-list-tile :to="''"&gt;
+            &lt;v-list-tile-action&gt;&lt;v-icon&gt;help_outline&lt;/v-icon&gt;&lt;/v-list-tile-action&gt;
+            &lt;v-list-tile-title&gt;FAQ관리&lt;/v-list-tile-title&gt;
+          &lt;/v-list-tile&gt;
+          &lt;v-list-tile :to="''"&gt;
+            &lt;v-list-tile-action&gt;&lt;v-icon&gt;format_list_bulleted&lt;/v-icon&gt;&lt;/v-list-tile-action&gt;
+            &lt;v-list-tile-title&gt;공지사항관리&lt;/v-list-tile-title&gt;
+          &lt;/v-list-tile&gt;
+        &lt;/v-list-group&gt;
+&nbsp;
+        &lt;v-list-tile :to="'/authority'"&gt;
+          &lt;v-list-tile-action&gt;
+            &lt;v-icon&gt;how_to_reg&lt;/v-icon&gt;
+          &lt;/v-list-tile-action&gt;
+          &lt;v-list-tile-title&gt;권한관리&lt;/v-list-tile-title&gt;
+        &lt;/v-list-tile&gt;
+&nbsp;
+      &lt;/v-list&gt;
+    &lt;/v-navigation-drawer&gt;
+    &lt;v-toolbar fixed app dark color="grey darken-3"&gt;
+      &lt;div class="header"&gt;
+        &lt;v-toolbar-side-icon @click.stop="drawerCtrl"&gt;&lt;/v-toolbar-side-icon&gt;
+        &lt;div class="logout"&gt;
+          &lt;v-btn @click="logout()" flat&gt;LOGOUT&lt;/v-btn&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/v-toolbar&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+&nbsp;
+&lt;script&gt;
+import auth from '@/auth';
+import * as VToolbar from 'vuetify/es5/components/VToolbar';
+import * as VList from 'vuetify/es5/components/VList';
+import * as VNavigationDrawer from 'vuetify/es5/components/VNavigationDrawer';
+&nbsp;
+export default {
+  name: 'AppHeader',
+  components: {
+    ...VToolbar,
+    ...VList,
+    ...VNavigationDrawer
+  },
+  data () {
+<span class="cstat-no" title="statement not covered" >    return {</span>
+      routerSub: this.$router.history.current.matched[0].path,
+      drawer: true,
+      mini: true
+    };
+  },
+  watch: {
+    '$route' (to) {
+<span class="cstat-no" title="statement not covered" >      this.routerSub = to.matched[0].path;</span>
+    }
+  },
+  created () {
+<span class="cstat-no" title="statement not covered" >    this.drawerCtrl();</span>
+  },
+  methods: {
+    drawerCtrl () {
+<span class="cstat-no" title="statement not covered" >      if (window.innerWidth &lt; 1264) {</span>
+<span class="cstat-no" title="statement not covered" >        this.mini = false;</span>
+<span class="cstat-no" title="statement not covered" >        return this.drawer = !this.drawer;</span>
+      } else {
+<span class="cstat-no" title="statement not covered" >        return this.mini = !this.mini;</span>
+      }
+    },
+    logout () {
+<span class="cstat-no" title="statement not covered" >      auth.logout().then((data) =&gt; <span class="fstat-no" title="function not covered" >{</span></span>
+<span class="cstat-no" title="statement not covered" >        this.$router.push('/login');</span>
+      }).catch((error) =&gt; <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >        alert('로그아웃 에러');</span>
+        /*
+         * TODO : ERROR 처리는 어떻게 표현 할지 고민.
+         *   - 알림 모듈 생성하여 관리?
+         * */
+      });
+    }
+  }
+};
+&lt;/script&gt;
+&nbsp;
+&lt;style lang="less"&gt;
+  .header {
+    position: relative;
+    width:100%;
+    .v-btn {
+      position:relative;
+      z-index:1;
+    }
+    .logout {
+      position:absolute;
+      top:0;
+      right:0;
+      z-index:1;
+    }
+  }
+  .v-list__tile--active {
+    &amp;:before {
+      content: '';
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+       background: rgba(0,0,0,.22);
+     }
+  }
+  .v-navigation-drawer--mini-variant {
+    .v-list__group__header {
+      .v-list__tile {
+        width: 60px;
+      }
+    }
+  }
+&lt;/style&gt;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sat Aug 25 2018 13:04:31 GMT+0900 (KST)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>
